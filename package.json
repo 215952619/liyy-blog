@@ -1,0 +1,38 @@
+{
+  "name": "vitepress-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "serve": "vitepress serve .",
+    "prepare": "husky install",
+    "summarize": "node ./overflow/summarize/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "sass": "^1.55.0",
+    "scss": "^0.2.4",
+    "typescript": "^4.8.4",
+    "unocss": "^0.46.0",
+    "unplugin-auto-import": "^0.11.4",
+    "unplugin-vue-components": "^0.22.9",
+    "vite": "^3.2.0",
+    "vitepress": "1.0.0-alpha.25"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.10",
+    "@vueuse/core": "^9.4.0",
+    "element-plus": "^2.2.19",
+    "markdown-it-task-lists": "^2.1.1",
+    "nprogress": "^0.2.0",
+    "prism-theme-vars": "^0.2.4",
+    "vue": "^3.2.41"
+  }
+}

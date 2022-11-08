@@ -1,0 +1,36 @@
+/* https://github.com/antfu/prism-theme-vars */
+// @use "prism-theme-vars/base.css";
+// @use "prism-theme-vars/marker.css";
+@use "vitepress/dist/client/theme-default/styles/vars.css";
+@use "vitepress/dist/client/theme-default/styles/components/vp-doc.css";
+
+:root,
+::before {
+  --copy-button-size: 40px;
+  --copy-button-position: 8px;
+}
+
+.vp-doc {
+  [class*="language-"] {
+    & > button.copy {
+      top: var(--copy-button-position);
+      right: var(--copy-button-position);
+      width: var(--copy-button-size);
+      height: var(--copy-button-size);
+      background-size: 20px;
+
+      &.copied::before,
+      &:hover.copied::before {
+        position: absolute;
+        left: unset;
+        right: var(--copy-button-size);
+        bottom: -2px;
+        border-radius: 4px 0 0 4px;
+        padding-top: 0px;
+        width: 64px;
+        height: var(--copy-button-size);
+        line-height: var(--copy-button-size);
+      }
+    }
+  }
+}

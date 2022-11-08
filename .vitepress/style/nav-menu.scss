@@ -1,0 +1,9 @@
+@use "./mixins.scss" as *;
+
+.navbar-menu {
+  display: none;
+
+  @include respond-to("md") {
+    display: flex;
+  }
+}

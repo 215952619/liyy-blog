@@ -1,0 +1,9 @@
+node_modules
+overflow
+pnpm-lock.yaml
+en-us
+zh-cn
+auto-imports.d.ts
+components.d.ts
+.vitepress/dist
+dist
