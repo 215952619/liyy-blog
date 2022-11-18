@@ -2,7 +2,7 @@
 import { computed } from "vue";
 import { isClient } from "@vueuse/core";
 import { useLang } from "~/composables/lang";
-import localeData from "../../i18n/pages/not-found.json";
+import localeData from "i18n/pages/not-found.json";
 
 const lang = useLang();
 

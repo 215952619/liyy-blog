@@ -27,6 +27,10 @@ export const sideNote = () => {
             text: "promise",
             link: "/zh-cn/note/myPromise",
           },
+          {
+            text: "Windows批处理文件获取管理员权限",
+            link: "/zh-cn/note/bash获取管理员权限",
+          },
         ],
       },
     ],

@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predev": "pnpm docs:init",
     "dev": "vitepress dev .",
+    "prebuild": "pnpm docs:init",
     "build": "vitepress build .",
     "serve": "vitepress serve .",
     "prepare": "husky install",
-    "summarize": "node ./overflow/summarize/index.js"
+    "docs:init": "node ./overflow/generate/docs.js",
+    "docs:watch": "node ./overflow/generate/watch.js"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +34,7 @@
     "@vueuse/core": "^9.4.0",
     "element-plus": "^2.2.19",
     "markdown-it-task-lists": "^2.1.1",
+    "nodemon": "^2.0.20",
     "nprogress": "^0.2.0",
     "prism-theme-vars": "^0.2.4",
     "vue": "^3.2.41"

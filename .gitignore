@@ -1,5 +1,5 @@
 node_modules
-overflow
+overflow/**/*.json
 pnpm-lock.yaml
 en-us
 zh-cn
@@ -7,3 +7,4 @@ auto-imports.d.ts
 components.d.ts
 .vitepress/dist
 dist
+i18n

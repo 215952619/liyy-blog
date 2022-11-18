@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "ESNext",
+    "lib": ["ESNext"],
+    "paths": {
+      "@/*": ["examples/"],
+      "~/*": [".vitepress/"],
+      "i18n": ["i18n/"]
+    },
+    "noEmit": false,
+    "plugins": [{ "transform": "typescript-transform-paths" }],
+    "resolveJsonModule": true,
+    "types": ["vite/client", "node"]
+  }
+}

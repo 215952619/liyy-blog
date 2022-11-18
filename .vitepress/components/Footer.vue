@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from "vue";
 import { useLang } from "~/composables/lang";
-import homeLocale from "../../i18n/pages/home.json";
+import homeLocale from "i18n/pages/home.json";
 
 defineProps({
   isHome: {
