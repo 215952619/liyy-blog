@@ -1,0 +1,6 @@
+**/__fixtures__/**/*.json
+
+dist
+tmp
+node_modules
+.husky

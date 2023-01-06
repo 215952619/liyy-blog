@@ -1,0 +1,22 @@
+{
+  "name": "@lyb/main",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "serve": "vitepress serve .",
+    "test": "echo test feedback from main"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "@lyb/docs": "workspace:^1.0.0",
+    "@lyb/theme": "workspace:*",
+    "markdown-it-task-lists": "^2.1.1"
+  }
+}

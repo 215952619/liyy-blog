@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
+    "target": "ESNext",
+    "useDefineForClassFields": true,
     "module": "ESNext",
-    "lib": ["ESNext"],
-    "paths": {
-      "@/*": ["examples/"],
-      "~/*": [".vitepress/"],
-      "i18n": ["i18n/"]
-    },
-    "noEmit": false,
-    "plugins": [{ "transform": "typescript-transform-paths" }],
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
     "resolveJsonModule": true,
-    "types": ["vite/client", "node"]
-  }
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

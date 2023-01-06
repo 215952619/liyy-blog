@@ -1,0 +1,28 @@
+{
+  "name": "@lyb/theme",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "test": "echo test feedback from theme"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.10",
+    "@lyb/main": "workspace:*",
+    "@vueuse/core": "^9.4.0",
+    "element-plus": "^2.2.19",
+    "nprogress": "^0.2.0",
+    "prism-theme-vars": "^0.2.4",
+    "unocss": "^0.48.0"
+  },
+  "devDependencies": {
+    "@types/nprogress": "^0.2.0"
+  }
+}
