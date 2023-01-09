@@ -15,7 +15,7 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
-    "@lyb/docs": "workspace:^1.0.0",
+    "@lyb/docs": "workspace:*",
     "@lyb/theme": "workspace:*",
     "markdown-it-task-lists": "^2.1.1"
   }

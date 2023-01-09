@@ -1,7 +1,9 @@
 <template>
   <Nav />
   <Sidebar>
-    <template #top>sider bar top slot</template>
+    <template #top>
+      <p class="bg-red">sider bar top slot</p>
+    </template>
     <template #bottom>sider bar bottom slot</template>
   </Sidebar>
   <Footer />

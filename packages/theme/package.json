@@ -1,17 +1,29 @@
 {
   "name": "@lyb/theme",
-  "type": "module",
+  "description": "vitepress自定义主题",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
+  "main": "lib/lyb-theme.umd.cjs",
+  "module": "lib/lyb-theme.js",
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": {
+      "import": "lib/lyb-theme.js",
+      "require": "lib/lyb-theme.umd.cjs"
+    }
+  },
   "scripts": {
-    "dev": "vite",
+    "dev": "pnpm build --watch",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview",
     "test": "echo test feedback from theme"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "vue",
+    "vitepress"
+  ],
+  "author": "liyy",
   "license": "ISC",
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.10",
@@ -19,10 +31,10 @@
     "@vueuse/core": "^9.4.0",
     "element-plus": "^2.2.19",
     "nprogress": "^0.2.0",
-    "prism-theme-vars": "^0.2.4",
-    "unocss": "^0.48.0"
+    "prism-theme-vars": "^0.2.4"
   },
   "devDependencies": {
-    "@types/nprogress": "^0.2.0"
+    "@types/nprogress": "^0.2.0",
+    "@vitejs/plugin-vue": "^4.0.0"
   }
 }

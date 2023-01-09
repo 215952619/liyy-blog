@@ -1,5 +1,4 @@
 import { defineConfig, defineConfigWithTheme } from "vitepress";
-console.log("fasf", defineConfig);
 
 import { head, markdown, nav, sidebars } from "./config/index.js";
 import { langs, repoPath } from "../project.config.json";
