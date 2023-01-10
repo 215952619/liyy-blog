@@ -4,6 +4,7 @@
 </template>
 
 <script setup lang="ts">
+import { ElButton } from "element-plus";
 const emit = defineEmits<{
   (e: "close"): void;
 }>();

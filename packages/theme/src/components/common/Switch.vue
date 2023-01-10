@@ -1,28 +1,30 @@
 <template>
-  <ElIcon class="bg-red">
+  <ElIcon class="bg-red lyb-icon">
     <Dark v-if="modelValue" />
     <Light v-else />
   </ElIcon>
 </template>
 
 <script setup lang="ts">
-// import { watch } from "vue";
+import { ElIcon } from "element-plus";
 import Dark from "../../assets/icons/Dark.vue";
 import Light from "../../assets/icons/Light.vue";
 
-const props = defineProps({
+defineProps({
   modelValue: {
     type: Boolean,
     default: false,
   },
 });
-
-// const emits = defineEmits<{
-//   (e: "change"): void;
-// }>();
-
-// watch(
-//   () => props.modelValue,
-//   () => emits("change")
-// );
 </script>
+
+<style lang="scss">
+.lyb-icon {
+  font-size: 1em;
+
+  > svg {
+    width: 1em;
+    height: 1em;
+  }
+}
+</style>

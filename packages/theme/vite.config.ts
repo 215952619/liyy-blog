@@ -18,7 +18,7 @@ export default defineConfig(async ({ mode, command }) => {
         fileName: "lyb-theme",
       },
       rollupOptions: {
-        external: ["vue", "vitepress", "unocss"],
+        external: ["vue", "vitepress"],
         output: {
           globals: {
             vue: "vue",

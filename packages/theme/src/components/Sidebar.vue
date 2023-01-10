@@ -21,6 +21,7 @@
   </el-scrollbar>
 </template>
 <script setup lang="ts">
+import { ElScrollbar } from "element-plus";
 import { useSidebar } from "../composables/sidebar";
 const [hasSidebar, sidebars] = useSidebar();
 </script>

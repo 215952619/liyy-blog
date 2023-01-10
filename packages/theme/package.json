@@ -10,8 +10,11 @@
   ],
   "exports": {
     ".": {
-      "import": "lib/lyb-theme.js",
-      "require": "lib/lyb-theme.umd.cjs"
+      "import": "./lib/lyb-theme.js",
+      "require": "./lib/lyb-theme.umd.cjs"
+    },
+    "./style.css": {
+      "import": "./lib/style.css"
     }
   },
   "scripts": {
